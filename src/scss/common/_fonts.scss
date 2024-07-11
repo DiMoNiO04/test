@@ -1,47 +1,21 @@
-// @font-face {
-//   font-family: 'Gilroy';
-//   src:
-//     local('Gilroy Medium'),
-//     local('Gilroy-Medium'),
-//     url('/fonts/Gilroy-Medium.woff2') format('woff2'),
-//     url('/fonts/Gilroy-Medium.woff') format('woff'),
-//     url('/fonts/Gilroy-Medium.ttf') format('truetype');
-//   font-weight: 500;
-//   font-style: normal;
-// }
+/* manrope-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/manrope-v15-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
-// @font-face {
-//   font-family: 'Gilroy';
-//   src:
-//     local('Gilroy Regular'),
-//     local('Gilroy-Regular'),
-//     url('/fonts/Gilroy-Regular.woff2') format('woff2'),
-//     url('/fonts/Gilroy-Regular.woff') format('woff'),
-//     url('/fonts/Gilroy-Regular.ttf') format('truetype');
-//   font-weight: 400;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Gilroy';
-//   src:
-//     local('Gilroy Semibold'),
-//     local('Gilroy-Semibold'),
-//     url('/fonts/Gilroy-Semibold.woff2') format('woff2'),
-//     url('/fonts/Gilroy-Semibold.woff') format('woff'),
-//     url('/fonts/Gilroy-Semibold.ttf') format('truetype');
-//   font-weight: 600;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Gilroy';
-//   src:
-//     local('Gilroy Bold'),
-//     local('Gilroy-Bold'),
-//     url('/fonts/Gilroy-Bold.woff2') format('woff2'),
-//     url('/fonts/Gilroy-Bold.woff') format('woff'),
-//     url('/fonts.Gilroy-Bold.ttf') format('truetype');
-//   font-weight: 700;
-//   font-style: normal;
-// }
+/* manrope-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/manrope-v15-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
