@@ -67,7 +67,7 @@
   stroke: #fff;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1400px) {
   .btn span {
     font-size: 15px;
     line-height: 24px;

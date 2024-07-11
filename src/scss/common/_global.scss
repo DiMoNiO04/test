@@ -200,3 +200,19 @@ svg {
     }
   }
 }
+
+@media (max-width: $mob) {
+  .wrapper {
+    padding: 14px 24px;
+  }
+
+  .title {
+    @include medium17;
+  }
+
+  .content {
+    p {
+      @include regular13;
+    }
+  }
+}
