@@ -1,0 +1,65 @@
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 14px;
+  -moz-column-gap: 14px;
+  column-gap: 14px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.checkbox label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 14px;
+  -moz-column-gap: 14px;
+  column-gap: 14px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+.checkbox label::before {
+  content: '';
+  display: block;
+  border-radius: 2px;
+  border: 2px solid #000;
+  width: 18px;
+  height: 18px;
+  -webkit-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease;
+}
+@media (any-hover: hover) {
+  .checkbox:hover label {
+    color: #244c98;
+  }
+  .checkbox:hover label::before {
+    border-color: #244c98;
+  }
+}
+.checkbox input {
+  display: none;
+}
+.checkbox input:checked + label {
+  color: #244c98;
+}
+.checkbox input:checked + label::before {
+  background: url('../assets/img/svg/check.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-color: #1f4284;
+}
+/*# sourceMappingURL=checkboxs.css.map */

@@ -67,6 +67,45 @@
   stroke: #fff;
 }
 
+.btn-sec {
+  background-color: #244c98;
+  width: 100%;
+  padding: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #244c98;
+  border-radius: 4px;
+}
+@media (any-hover: hover) {
+  .btn-sec:hover {
+    background-color: transparent;
+  }
+  .btn-sec:hover span {
+    color: #244c98;
+  }
+}
+.btn-sec--white {
+  background-color: transparent;
+}
+.btn-sec--white span {
+  color: #244c98;
+}
+@media (any-hover: hover) {
+  .btn-sec--white:hover {
+    background-color: #244c98;
+  }
+  .btn-sec--white:hover span {
+    color: #fff;
+  }
+}
+
 @media (max-width: 1400px) {
   .btn span {
     font-size: 15px;

@@ -51,6 +51,39 @@
   }
 }
 
+.btn-sec {
+  background-color: $blueDark;
+  width: 100%;
+  padding: 17px;
+  @include flexCenter;
+  border: 1px solid $blueDark;
+  border-radius: 4px;
+
+  @include hover {
+    background-color: transparent;
+
+    span {
+      color: $blueDark;
+    }
+  }
+
+  &--white {
+    background-color: transparent;
+
+    span {
+      color: $blueDark;
+    }
+
+    @include hover {
+      background-color: $blueDark;
+
+      span {
+        color: $white;
+      }
+    }
+  }
+}
+
 @media (max-width: $tablet) {
   .btn {
     span {

@@ -1,0 +1,93 @@
+@import '../utils/index';
+
+.modals-overlay {
+  position: fixed;
+  @include fullSize;
+  z-index: -4;
+  @include hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  @include flexCenter;
+  top: 0;
+  left: 0;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    z-index 0.2s ease;
+
+  &.active {
+    z-index: 4;
+    @include visible;
+  }
+}
+
+.modal-auth {
+  padding: 24px;
+  border-radius: 10px;
+  background-color: $bg;
+  width: 500px;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  @include hidden;
+
+  &.active {
+    @include visible;
+  }
+
+  &__close {
+    @include sizes(52px, 52px);
+    @include flexCenter;
+    background-color: $white;
+    @include transition(background-color);
+    border-radius: 10px;
+    margin: 0 0 0 auto;
+
+    svg {
+      @include sizes(24px, 24px);
+
+      path {
+        @include transition(stroke);
+      }
+    }
+
+    @include hover {
+      background-color: #000;
+
+      svg path {
+        stroke: $white;
+      }
+    }
+  }
+
+  &__title {
+    @include medium24;
+    margin-bottom: 18px;
+    color: $black;
+  }
+
+  &__btns {
+    @include flexColumn;
+    row-gap: 4px;
+    margin-top: 36px;
+  }
+
+  &__inputs {
+    @include flexColumn;
+    row-gap: 4px;
+    margin-bottom: 24px;
+  }
+
+  &__checkbox {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    @include medium20;
+    color: $blueDark;
+    @include transition(color);
+
+    @include hover {
+      color: $blue;
+    }
+  }
+}
