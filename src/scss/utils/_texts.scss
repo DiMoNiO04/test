@@ -1,0 +1,58 @@
+@mixin regular13 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.8px;
+}
+
+@mixin regular15 {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@mixin regular17 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@mixin regular18 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.59px;
+}
+
+@mixin medium17 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 27.2px;
+}
+
+@mixin medium18 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+@mixin medium20 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.32px;
+}
+
+@mixin medium24 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32.78px;
+}
+
+@mixin medium26 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 41.6px;
+}
+
+@mixin medium30 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 48px;
+}

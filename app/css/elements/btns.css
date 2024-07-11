@@ -1,0 +1,125 @@
+.btn {
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.btn span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.btn-def {
+  border-radius: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-column-gap: 48px;
+  -moz-column-gap: 48px;
+  column-gap: 48px;
+  background-color: #244c98;
+  padding: 12px 12px 12px 24px;
+  border: 1px solid #244c98;
+}
+.btn-def__icon {
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.btn-def__icon svg {
+  width: 24px;
+  height: 24px;
+}
+.btn-def__icon svg path {
+  -webkit-transition: stroke 0.5s ease;
+  transition: stroke 0.5s ease;
+}
+.btn-def:hover {
+  background-color: #fff;
+}
+.btn-def:hover span {
+  color: #244c98;
+}
+.btn-def:hover .btn-def__icon {
+  background-color: #244c98;
+}
+.btn-def:hover .btn-def__icon svg path {
+  stroke: #fff;
+}
+
+.btn-sec {
+  background-color: #244c98;
+  width: 100%;
+  padding: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #244c98;
+  border-radius: 4px;
+}
+@media (any-hover: hover) {
+  .btn-sec:hover {
+    background-color: transparent;
+  }
+  .btn-sec:hover span {
+    color: #244c98;
+  }
+}
+.btn-sec--white {
+  background-color: transparent;
+}
+.btn-sec--white span {
+  color: #244c98;
+}
+@media (any-hover: hover) {
+  .btn-sec--white:hover {
+    background-color: #244c98;
+  }
+  .btn-sec--white:hover span {
+    color: #fff;
+  }
+}
+
+@media (max-width: 1400px) {
+  .btn span {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .btn-def {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    padding: 10px 10px 10px 18px;
+  }
+  .btn-def__icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+/*# sourceMappingURL=btns.css.map */

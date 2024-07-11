@@ -1,0 +1,54 @@
+@import '../utils/index';
+
+.checkbox {
+  display: flex;
+  column-gap: 14px;
+  align-items: center;
+  cursor: pointer;
+
+  label {
+    @include regular18;
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    @include transition(color);
+
+    &::before {
+      content: '';
+      display: block;
+      border-radius: 2px;
+      border: 2px solid #000;
+      @include sizes(18px, 18px);
+      transition: border-color 0.2s ease;
+      flex-shrink: 0;
+      @include transition(border-color);
+    }
+  }
+
+  @include hover {
+    label {
+      color: $blueDark;
+
+      &::before {
+        border-color: $blueDark;
+      }
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked + label {
+      color: $blueDark;
+    }
+
+    &:checked + label::before {
+      background: url('../assets/img/svg/check.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-color: $blue;
+    }
+  }
+}

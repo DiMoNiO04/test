@@ -1,0 +1,102 @@
+@import '../utils/index';
+
+.btn {
+  @include transition(background-color);
+
+  span {
+    color: $white;
+    @include medium18;
+    @include transition(color);
+  }
+}
+
+.btn-def {
+  border-radius: 60px;
+  @include flexCenterBetween;
+  column-gap: 48px;
+  background-color: $blueDark;
+  padding: 12px 12px 12px 24px;
+  border: 1px solid $blueDark;
+
+  &__icon {
+    @include sizes(44px, 44px);
+    @include flexCenter;
+    background-color: $white;
+    border-radius: 50%;
+    @include transition(background-color);
+
+    svg {
+      @include sizes(24px, 24px);
+
+      path {
+        @include transition(stroke);
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $white;
+
+    span {
+      color: $blueDark;
+    }
+
+    .btn-def__icon {
+      background-color: $blueDark;
+
+      svg path {
+        stroke: $white;
+      }
+    }
+  }
+}
+
+.btn-sec {
+  background-color: $blueDark;
+  width: 100%;
+  padding: 17px;
+  @include flexCenter;
+  border: 1px solid $blueDark;
+  border-radius: 4px;
+
+  @include hover {
+    background-color: transparent;
+
+    span {
+      color: $blueDark;
+    }
+  }
+
+  &--white {
+    background-color: transparent;
+
+    span {
+      color: $blueDark;
+    }
+
+    @include hover {
+      background-color: $blueDark;
+
+      span {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .btn {
+    span {
+      @include regular15;
+    }
+  }
+
+  .btn-def {
+    column-gap: 20px;
+    padding: 10px 10px 10px 18px;
+
+    &__icon {
+      @include sizes(36px, 36px);
+    }
+  }
+}
