@@ -183,3 +183,20 @@ svg {
     @include medium26;
   }
 }
+
+@media (max-width: $tablet) {
+  .wrapper {
+    padding: 24px;
+  }
+
+  .title {
+    @include medium20;
+    line-height: 32px;
+  }
+
+  .content {
+    p {
+      @include regular15;
+    }
+  }
+}

@@ -221,4 +221,19 @@ svg {
     line-height: 41.6px;
   }
 }
+@media (max-width: 1439px) {
+  .wrapper {
+    padding: 24px;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27.32px;
+    line-height: 32px;
+  }
+  .content p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

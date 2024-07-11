@@ -66,4 +66,21 @@
 .btn-def:hover .btn-def__icon svg path {
   stroke: #fff;
 }
+
+@media (max-width: 1439px) {
+  .btn span {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .btn-def {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    padding: 10px 10px 10px 18px;
+  }
+  .btn-def__icon {
+    width: 36px;
+    height: 36px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
