@@ -213,4 +213,12 @@ svg {
   font-weight: 400;
   line-height: 28px;
 }
+
+@media (max-width: 1919px) {
+  .title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 41.6px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

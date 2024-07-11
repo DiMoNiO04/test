@@ -32,5 +32,7 @@
 }
 .hero__img img {
   border-radius: 0 10px 10px 0;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 /*# sourceMappingURL=hero.css.map */
