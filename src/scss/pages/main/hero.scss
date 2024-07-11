@@ -1,0 +1,33 @@
+@import '../../utils/index';
+
+.hero {
+  border-radius: 10px;
+  background-color: $bg;
+
+  &__container {
+    @include flexCenterBetween;
+  }
+
+  &__main {
+    max-width: 538px;
+    padding: 102px 72px;
+    box-sizing: content-box;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    margin-bottom: 36px;
+  }
+
+  &__img {
+    @include sizes(910px, 456px);
+    border-radius: 0 10px 10px 0;
+
+    img {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}

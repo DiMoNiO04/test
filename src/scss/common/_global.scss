@@ -132,9 +132,6 @@ body {
   padding: 0;
   background: $white;
   overflow-x: hidden;
-  @include flexColumn;
-  min-height: 100vh;
-  position: relative;
 
   &.hidden {
     overflow: hidden;
@@ -159,4 +156,24 @@ svg {
   @include fullSize();
   stroke-linejoin: round;
   stroke-linecap: round;
+}
+
+.wrapper {
+  max-width: 100%;
+  padding: 36px 40px;
+  background-color: $white;
+  @include flexColumn;
+  min-height: 100vh;
+  position: relative;
+}
+
+.title {
+  @include medium30;
+  color: $blue;
+}
+
+.content {
+  p {
+    @include regular17;
+  }
 }
